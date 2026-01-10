@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    /* Linear gradient from top-left to bottom-right */
+    background: linear-gradient(135deg, #d5651f, #640a54, #c5c940);
+    color: #1f2937;
+}
+
+
+/* Header */
+header {
+    background: #2563eb;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+header p {
+    color: #dde478;
+}
+
+/* Form Section */
+.form-section {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    color: #513e37;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #e31b0d;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Table */
+.table-section {
+    padding: 20px;
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th {
+    background: #25eb53;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+/* Actions */
+.action-btn {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.action-btn:first-child {
+    color: #1680a3; /* Edit */
+}
+
+.action-btn:last-child {
+    color: #dc2626; /* Delete */
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+}
